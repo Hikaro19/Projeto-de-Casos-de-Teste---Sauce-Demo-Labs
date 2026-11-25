@@ -1,0 +1,17 @@
+{
+  "name": "entrega3-saucedemo-playwright",
+  "version": "1.0.0",
+  "description": "Entrega 3 - Automação de testes E2E do Swag Labs (Sauce Demo) com Playwright - Hikaro Lázaro",
+  "private": true,
+  "scripts": {
+    "test": "playwright test",
+    "test:ct": "playwright test --project=standard_user --grep @regressao",
+    "test:inconsistencias": "playwright test --project=standard_user --grep @inconsistencia",
+    "test:problem_user": "playwright test --project=problem_user",
+    "test:headed": "playwright test --project=standard_user --headed",
+    "report": "playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.49.0"
+  }
+}
